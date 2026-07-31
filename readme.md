@@ -1,31 +1,39 @@
-# 🌦 Weather on the Terminal
+# Weather on the Terminal
 
-I got tired of opening a browser just to check if I needed a jacket, so I built this simple Python CLI tool. It’s a straightforward app that pulls live data from WeatherAPI and dumps it right into your terminal. 
+I wanted a quick way to check the weather without opening a browser, so I built this small command-line application in Python. It fetches real-time weather data from WeatherAPI and displays it directly in the terminal.
 
-I mainly put this together to get better at handling JSON responses and—more importantly—to practice keeping sensitive info like API keys out of my code using environment variables.
-
----
-
-## 🚀 What it does
-
-- **Instant Weather:** Just type a city name and get the current stats.
-- **The Essentials:** Shows temperature (°C), general vibes (condition), humidity, and wind speed.
-- **Secure:** Uses `.env` so you don't accidentally leak your API key to GitHub.
-- **Fail-safe:** Added some basic error handling so it doesn't just crash if you mistype a city.
+The main goal of this project was to practice working with REST APIs, handling JSON responses, and storing API keys securely using environment variables instead of hardcoding them.
 
 ---
 
-## 🛠 The Setup
+## Features
 
-* **Language:** Python 3
-* **Libraries:** `requests` (for the API calls) & `python-dotenv` (for the secrets)
-* **Data Source:** WeatherAPI
+- Get the current weather for any city.
+- View temperature, weather condition, humidity, and wind speed.
+- Store the API key securely with a `.env` file.
+- Basic error handling for invalid city names and API requests.
 
 ---
 
-## ⚙ How to get it running
+## Tech Stack
 
-1. **Grab the code**
-   ```bash
-   git clone [https://github.com/yourusername/weather-cli-app.git](https://github.com/yourusername/weather-cli-app.git)
-   cd weather-cli-app
+- **Python**
+- **requests**
+- **python-dotenv**
+- **WeatherAPI**
+
+---
+
+## Installation
+
+**Clone the repository**:
+
+```bash
+git clone https://github.com/SohailArif313/real-time-weather.git
+```
+
+**Move into the project directory:**
+
+```bash
+cd real-time-weather
+```
